@@ -1,0 +1,369 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; /* Fondo sutil para destacar las secciones */
+}
+
+/* Header styles */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px 20px;
+    border: 2px solid #ddd; /* Borde alrededor del recuadro */
+    border-radius: 10px;
+}
+
+.logo {
+    width: 50px; /* Tamaño ajustado del logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: center; /* Centramos solo el contenido del logo */
+    align-items: center;
+    margin: 40px 0;
+    padding: 0 50px;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa todo el espacio horizontal */
+}
+
+.center-logo {
+    max-width: 300px; /* Ajustamos el tamaño del logo principal */
+    height: auto;
+}
+
+/* Description styles */
+.description {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.description p {
+    margin-bottom: 15px;
+}
+
+/* Product grid styles */
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px auto;
+    padding: 0 50px;
+}
+
+.product-item {
+    flex: 1;
+    max-width: 600px;
+}
+
+.product-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Agregamos borde a los productos */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-box {
+        margin: 20px 0; /* Agregamos más margen para móviles */
+    }
+
+    .product-grid {
+        flex-direction: column;
+        gap: 20px; /* Ajuste del espaciado para móviles */
+    }
+
+    .product-item {
+        max-width: 100%; /* Producto ocupa todo el ancho en móviles */
+    }
+}
+
+
+
+/* Título de sección de productos */
+.Titulo {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.Titulo h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.Titulo p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Sección de productos */
+.productosClase {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.producto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.NombreProducto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.NombreProducto h1 {
+    font-size: 24px;
+    margin: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Botones de productos */
+.Bt {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.BotonesP {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin: 80px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.BotonesP:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .producto {
+        flex-direction: column;
+    }
+
+    .NombreProducto {
+        flex-direction: column;
+    }
+
+    .Bt {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para la sección de Contacto */
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección "Sobre nosotros" */
+.Informacion {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: justify;
+    background-color: #fff; /* Fondo blanco para la sección de información */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.Informacion p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para la sección de título */
+.Titulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.Titulo h1 {
+    font-size: 36px;
+    color: #333;
+    border-bottom: 2px solid #000; /* Línea debajo del título */
+    padding-bottom: 10px;
+}
